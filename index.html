@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="./photo/redit.png" type="image/png" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="banner">
+      <img class="logo" src="./photo/buttonn.png" alt="logo" />
+      <div class="banner-cen">
+        <h1>hair beutiful</h1>
+        <p>fasion desain</p>
+        <div class="banner-bt">
+          <a href="#"><span></span>about</a>
+          <a href="#"><span></span>more</a>
+        </div>
+      </div>
+    </section>
+    <div id="sidenav">
+      <nav>
+        <ul>
+          <li><a href="#">about</a></li>
+          <li><a get href="#">home</a></li>
+          <li><a target="_blank" href="#">mony</a></li>
+          <li><a href="#">dark</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menupn">
+      <img id="menu" src="./photo/pp.png" alt="p" />
+    </div>
+
+    <script>
+      var menupn = document.getElementById("menupn");
+      var menu = document.getElementById("menu");
+      var sidenav = document.getElementById("sidenav");
+      menupn.onclick = function () {
+        if (sidenav.style.right == "-200px") {
+          sidenav.style.right = "0";
+        } else {
+          sidenav.style.right = "-200px";
+        }
+      };
+    </script>
+  </body>
+</html>
